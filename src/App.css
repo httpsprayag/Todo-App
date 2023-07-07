@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.taskBg {
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.taskNumber {
+  border: 1px solid yellowgreen;
+  border-radius: 50%;
+  padding: 7px 12px;
+  color: white;
+  background-color: rgb(48, 46, 46);
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.iconWrapper {
+  & button{
+    border: none;
+    background-color: #555;
+    width: 45px;
+    height: 33px;
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  & .btn-done {
+    color: greenyellow;
+    &:hover{
+      transform: scale(1.15);
+      transition: all 500ms;
+      color: yellow;
+    }
+  }
+  & .btn-edit {
+    color: white;
+    &:hover{
+      transform: scale(1.15);
+      transition: all 500ms;
+      color: yellow;
+    }
+  }
+  & .btn-delete {
+    color: red;
+    &:hover{
+      transform: scale(1.15);
+      transition: all 500ms;
+      color: yellow;
+    }
+  }
+}
+
+#jAlert_table, #jAlert_th, #jAlert_td{
+  border: 2px solid blue;
+  background-color:lightblue;
+  border-collapse: collapse;
+  width:100px;
+}
+
+#jAlert_th, #jAlert_td{
+  padding:5px;
+  padding-right:10px;
+  padding-left:10px;
+}
+
+#jAlert{
+  /* Position fixed */
+  position:fixed;
+  /* Center it! */
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
